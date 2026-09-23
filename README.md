@@ -4,7 +4,8 @@
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Interactive-brightgreen?style=for-the-badge&logo=googlechrome&logoColor=white)](https://djidelabdelali.github.io/pfe/)
 [![Thesis PDF](https://img.shields.io/badge/Thesis-PDF%20Document-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://github.com/DjidelAbdelali/pfe/blob/main/memoire_docs/Memoire_PFE_USTHB.pdf)
-[![Defense Slides](https://img.shields.io/badge/Slides-PPTX%20Presentation-orange?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FDjidelAbdelali%2Fpfe%2Fmain%2Fmemoire_docs%2FPresentation_PFE_USTHB.pptx)
+[![Defense Slides PDF](https://img.shields.io/badge/Slides-PDF%20Presentation-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://github.com/DjidelAbdelali/pfe/blob/main/memoire_docs/Presentation_PFE_USTHB.pdf)
+[![Defense Slides PPTX](https://img.shields.io/badge/Slides-PPTX%20Presentation-orange?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FDjidelAbdelali%2Fpfe%2Fmain%2Fmemoire_docs%2FPresentation_PFE_USTHB.pptx)
 [![Portfolio](https://img.shields.io/badge/Portfolio-DJIDEL%20Abdelali%20Rayan-blue?style=for-the-badge&logo=react&logoColor=white)](https://djidelabdelali.github.io/portfolio/)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DjidelAbdelali/pfe)
 
@@ -30,9 +31,13 @@ The project combines 3D CAD mechanical design in SolidWorks, dynamic closed-loop
 
 ## 📄 Thesis & Defense Materials (Working Links)
 
-- 📖 **[View Thesis PDF Document](https://github.com/DjidelAbdelali/pfe/blob/main/memoire_docs/Memoire_PFE_USTHB.pdf)** *(Integrated GitHub PDF Viewer)*
+### 📖 Master Thesis (Mémoire)
+- 🔗 **[View Thesis PDF Document](https://github.com/DjidelAbdelali/pfe/blob/main/memoire_docs/Memoire_PFE_USTHB.pdf)** *(GitHub Native PDF Viewer)*
 - ⬇️ **[Download Thesis PDF (Raw)](https://raw.githubusercontent.com/DjidelAbdelali/pfe/main/memoire_docs/Memoire_PFE_USTHB.pdf)**
-- 📊 **[View Defense Slides Online](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FDjidelAbdelali%2Fpfe%2Fmain%2Fmemoire_docs%2FPresentation_PFE_USTHB.pptx)** *(Office Online Web Viewer)*
+
+### 📊 Defense Presentation (Soutenance)
+- 🔗 **[View Defense Slides PDF](https://github.com/DjidelAbdelali/pfe/blob/main/memoire_docs/Presentation_PFE_USTHB.pdf)** *(GitHub Native PDF Slide Viewer)*
+- 🖥️ **[View Defense Slides PPTX (Office Online)](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FDjidelAbdelali%2Fpfe%2Fmain%2Fmemoire_docs%2FPresentation_PFE_USTHB.pptx)**
 - ⬇️ **[Download Presentation PPTX](https://raw.githubusercontent.com/DjidelAbdelali/pfe/main/memoire_docs/Presentation_PFE_USTHB.pptx)**
 
 ---
@@ -82,7 +87,8 @@ pfe/
 │
 ├── memoire_docs/                # Thesis Documentation & Presentation
 │   ├── Memoire_PFE_USTHB.pdf    # Full Master's Thesis (PDF, USTHB 2025)
-│   ├── Presentation_PFE_USTHB.pptx # Defense Slide Deck (PPTX)
+│   ├── Presentation_PFE_USTHB.pdf # Defense Presentation Slides (PDF Version)
+│   ├── Presentation_PFE_USTHB.pptx # Defense Slide Deck (PowerPoint)
 │   └── figures/                 # Trajectory Tracking & Error Metric Figures (PNG)
 │
 ├── matlab_simulink/             # Controller Simulations & Benchmarks
