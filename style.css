@@ -120,6 +120,20 @@ html, body {
   color: var(--ghost-cyan);
 }
 
+a.pill-btn.doc-btn {
+  text-decoration: none;
+  background: rgba(139, 92, 246, 0.15);
+  border-color: rgba(139, 92, 246, 0.4);
+  color: #c084fc;
+}
+
+a.pill-btn.doc-btn:hover {
+  background: rgba(139, 92, 246, 0.3);
+  border-color: #c084fc;
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(139, 92, 246, 0.4);
+}
+
 /* Main Content Area */
 #main-content {
   flex: 1;

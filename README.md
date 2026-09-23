@@ -32,13 +32,15 @@ The project combines 3D CAD mechanical design in SolidWorks, dynamic closed-loop
 ## 📄 Thesis & Defense Materials (Working Links)
 
 ### 📖 Master Thesis (Mémoire)
-- 🔗 **[View Thesis PDF Document](https://github.com/DjidelAbdelali/pfe/blob/main/memoire_docs/Memoire_PFE_USTHB.pdf)** *(GitHub Native PDF Viewer)*
-- ⬇️ **[Download Thesis PDF (Raw)](https://raw.githubusercontent.com/DjidelAbdelali/pfe/main/memoire_docs/Memoire_PFE_USTHB.pdf)**
+- 📄 **[View Master Thesis PDF Document](memoire_docs/Memoire_PFE_USTHB.pdf)** *(Relative Link / GitHub Native PDF Viewer)*
+- 🔗 **[Direct Link (GitHub Web Viewer)](https://github.com/DjidelAbdelali/pfe/blob/main/memoire_docs/Memoire_PFE_USTHB.pdf)**
+- ⬇️ **[Download Thesis PDF (Raw File)](https://raw.githubusercontent.com/DjidelAbdelali/pfe/main/memoire_docs/Memoire_PFE_USTHB.pdf)**
 
-### 📊 Defense Presentation (Soutenance)
-- 🔗 **[View Defense Slides PDF](https://github.com/DjidelAbdelali/pfe/blob/main/memoire_docs/Presentation_PFE_USTHB.pdf)** *(GitHub Native PDF Slide Viewer)*
-- 🖥️ **[View Defense Slides PPTX (Office Online)](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FDjidelAbdelali%2Fpfe%2Fmain%2Fmemoire_docs%2FPresentation_PFE_USTHB.pptx)**
-- ⬇️ **[Download Presentation PPTX](https://raw.githubusercontent.com/DjidelAbdelali/pfe/main/memoire_docs/Presentation_PFE_USTHB.pptx)**
+### 📊 Defense Presentation Slides (Soutenance)
+- 📄 **[View Defense Presentation PDF](memoire_docs/Presentation_PFE_USTHB.pdf)** *(Relative Link / GitHub PDF Viewer)*
+- 🔗 **[Direct Link PDF (GitHub Web Viewer)](https://github.com/DjidelAbdelali/pfe/blob/main/memoire_docs/Presentation_PFE_USTHB.pdf)**
+- 🖥️ **[View Defense Slides PPTX (Office Online Viewer)](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FDjidelAbdelali%2Fpfe%2Fmain%2Fmemoire_docs%2FPresentation_PFE_USTHB.pptx)**
+- ⬇️ **[Download Presentation PPTX (PowerPoint)](https://raw.githubusercontent.com/DjidelAbdelali/pfe/main/memoire_docs/Presentation_PFE_USTHB.pptx)**
 
 ---
 
