@@ -1,0 +1,18 @@
+# MATLAB / Simulink
+slprj/
+*.asv
+*.bak
+*.tmp
+*.slxc
+
+# ROS 2 Build Artifacts
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/
+
+# OS / Editor Files
+desktop.ini
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

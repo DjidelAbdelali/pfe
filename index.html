@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dual Delta Robot 3D Simulator — ASSEMBLY_1 URDF Joint Mating</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+  <div id="app-container">
+    <!-- Topbar Header -->
+    <header id="topbar">
+      <div class="brand-area">
+        <span class="brand-icon">◈</span>
+        <div>
+          <div class="brand-title">DUAL DELTA ROBOT SIMULATOR</div>
+          <div class="brand-subtitle">ASSEMBLY_1 URDF KINEMATIC MATES · GHOST IK vs REAL CONTROLLER DYNAMICS</div>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <button class="pill-btn active" id="btn-toggle-ghost">👻 Ghost Visible</button>
+        <button class="pill-btn active" id="btn-toggle-trails">✨ Trails Enabled</button>
+        <button class="pill-btn" id="btn-reset-view">🎥 Reset View</button>
+      </div>
+    </header>
+
+    <!-- Main Workspace Area -->
+    <div id="main-content">
+      <!-- 3D Viewport -->
+      <div id="viewport-container">
+        <canvas id="canvas3d"></canvas>
+
+        <!-- Floating Telemetry Overlay Cards -->
+        <div id="telemetry-overlay">
+          <!-- Ghost Robot Readout -->
+          <div class="telemetry-card">
+            <div class="card-header">
+              <span class="card-title">Ghost Robot (Inverse Kinematics)</span>
+              <span class="badge badge-ghost">ASSEMBLY_1 IK</span>
+            </div>
+            <div class="telemetry-row">
+              <span class="telemetry-label">Position X:</span>
+              <span class="telemetry-value val-ghost" id="ghost-x">0.000 m</span>
+            </div>
+            <div class="telemetry-row">
+              <span class="telemetry-label">Position Y:</span>
+              <span class="telemetry-value val-ghost" id="ghost-y">0.000 m</span>
+            </div>
+            <div class="telemetry-row">
+              <span class="telemetry-label">Position Z:</span>
+              <span class="telemetry-value val-ghost" id="ghost-z">-0.200 m</span>
+            </div>
+          </div>
+
+          <!-- Real Robot Readout -->
+          <div class="telemetry-card">
+            <div class="card-header">
+              <span class="card-title">Real Robot (Controlled Dynamics)</span>
+              <span class="badge badge-real">DYNAMIC SOLVER</span>
+            </div>
+            <div class="telemetry-row">
+              <span class="telemetry-label">Position X:</span>
+              <span class="telemetry-value val-real" id="real-x">0.000 m</span>
+            </div>
+            <div class="telemetry-row">
+              <span class="telemetry-label">Position Y:</span>
+              <span class="telemetry-value val-real" id="real-y">0.000 m</span>
+            </div>
+            <div class="telemetry-row">
+              <span class="telemetry-label">Position Z:</span>
+              <span class="telemetry-value val-real" id="real-z">-0.200 m</span>
+            </div>
+            <div class="telemetry-row" style="margin-top: 6px; padding-top: 6px; border-top: 1px solid rgba(255,255,255,0.1);">
+              <span class="telemetry-label">Tracking Error ||e(t)||:</span>
+              <span class="telemetry-value val-error" id="error-norm">0.000 mm</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Viewport Bottom Control Bar -->
+        <div id="viewport-bar">
+          <button class="control-btn primary" id="btn-play-pause">▶</button>
+          <button class="control-btn" id="btn-stop">⏹</button>
+          <span style="font-family: var(--font-mono); font-size: 11px; color: var(--text-muted);" id="sim-time">t = 0.00 s</span>
+        </div>
+      </div>
+
+      <!-- Right Sidebar Controls & Real-Time Charts -->
+      <aside id="sidebar-panel">
+        <!-- Control Strategy Selector -->
+        <div class="panel-section">
+          <div class="section-title">
+            <span>Control Strategy</span>
+            <span style="color: var(--ghost-cyan); font-size: 10px;">SLIDING MODE CONTROL</span>
+          </div>
+          <div class="chip-grid" id="ctrl-selector">
+            <div class="chip-item active" data-ctrl="s1sat">Surface S1 + Sat (Proposed)</div>
+            <div class="chip-item" data-ctrl="s1dhrl">Surface S1 + DHRL (Proposed)</div>
+            <div class="chip-item" data-ctrl="s2">Surface S2 (Comparison)</div>
+            <div class="chip-item" data-ctrl="pdf">PD Fractionnaire</div>
+            <div class="chip-item" data-ctrl="pd">PD Classique</div>
+          </div>
+        </div>
+
+        <!-- Trajectory Selector -->
+        <div class="panel-section">
+          <div class="section-title">
+            <span>Reference Trajectory</span>
+            <span style="color: var(--text-muted); font-size: 10px;">PATH</span>
+          </div>
+          <div class="chip-grid" id="traj-selector">
+            <div class="chip-item active" data-traj="ellipse">Ellipse (PFE Benchmark)</div>
+            <div class="chip-item" data-traj="circle">Circle</div>
+            <div class="chip-item" data-traj="figure8">Figure-8</div>
+            <div class="chip-item" data-traj="spiral">Spiral</div>
+          </div>
+        </div>
+
+        <!-- Real-Time Charts Panel -->
+        <div id="charts-container">
+          <div class="chart-card">
+            <div class="chart-title">Position Tracking X(t) [Ghost vs Real]</div>
+            <canvas id="chart-pos-x" class="chart-canvas"></canvas>
+          </div>
+
+          <div class="chart-card">
+            <div class="chart-title">Position Tracking Z(t) [Ghost vs Real]</div>
+            <canvas id="chart-pos-z" class="chart-canvas"></canvas>
+          </div>
+
+          <div class="chart-card">
+            <div class="chart-title">Tracking Error Dynamics ||e(t)|| [mm]</div>
+            <canvas id="chart-error" class="chart-canvas"></canvas>
+          </div>
+
+          <div class="chart-card">
+            <div class="chart-title">Control Torques u1, u2, u3 [N.m] & Chattering</div>
+            <canvas id="chart-torque" class="chart-canvas"></canvas>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script src="kinematics.js"></script>
+  <script src="dynamics.js"></script>
+  <script src="robot3d.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
