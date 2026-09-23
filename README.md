@@ -3,9 +3,7 @@
 <div align="center">
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Interactive-brightgreen?style=for-the-badge&logo=googlechrome&logoColor=white)](https://djidelabdelali.github.io/pfe/)
-[![Thesis PDF](https://img.shields.io/badge/Thesis-PDF%20Document-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://github.com/DjidelAbdelali/pfe/blob/main/memoire_docs/Memoire_PFE_USTHB.pdf)
-[![Defense Slides PDF](https://img.shields.io/badge/Slides-PDF%20Presentation-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://github.com/DjidelAbdelali/pfe/blob/main/memoire_docs/Presentation_PFE_USTHB.pdf)
-[![Defense Slides PPTX](https://img.shields.io/badge/Slides-PPTX%20Presentation-orange?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FDjidelAbdelali%2Fpfe%2Fmain%2Fmemoire_docs%2FPresentation_PFE_USTHB.pptx)
+[![Slides](https://img.shields.io/badge/Slides-Presentation-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://raw.githubusercontent.com/DjidelAbdelali/pfe/main/memoire_docs/Presentation_PFE_USTHB.pdf)
 [![Portfolio](https://img.shields.io/badge/Portfolio-DJIDEL%20Abdelali%20Rayan-blue?style=for-the-badge&logo=react&logoColor=white)](https://djidelabdelali.github.io/portfolio/)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DjidelAbdelali/pfe)
 
@@ -29,18 +27,10 @@ The project combines 3D CAD mechanical design in SolidWorks, dynamic closed-loop
 
 ---
 
-## 📄 Thesis & Defense Materials (Working Links)
+## 📄 Defense Presentation Materials
 
-### 📖 Master Thesis (Mémoire)
-- 📄 **[View Master Thesis PDF Document](memoire_docs/Memoire_PFE_USTHB.pdf)** *(Relative Link / GitHub Native PDF Viewer)*
-- 🔗 **[Direct Link (GitHub Web Viewer)](https://github.com/DjidelAbdelali/pfe/blob/main/memoire_docs/Memoire_PFE_USTHB.pdf)**
-- ⬇️ **[Download Thesis PDF (Raw File)](https://raw.githubusercontent.com/DjidelAbdelali/pfe/main/memoire_docs/Memoire_PFE_USTHB.pdf)**
-
-### 📊 Defense Presentation Slides (Soutenance)
-- 📄 **[View Defense Presentation PDF](memoire_docs/Presentation_PFE_USTHB.pdf)** *(Relative Link / GitHub PDF Viewer)*
-- 🔗 **[Direct Link PDF (GitHub Web Viewer)](https://github.com/DjidelAbdelali/pfe/blob/main/memoire_docs/Presentation_PFE_USTHB.pdf)**
-- 🖥️ **[View Defense Slides PPTX (Office Online Viewer)](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FDjidelAbdelali%2Fpfe%2Fmain%2Fmemoire_docs%2FPresentation_PFE_USTHB.pptx)**
-- ⬇️ **[Download Presentation PPTX (PowerPoint)](https://raw.githubusercontent.com/DjidelAbdelali/pfe/main/memoire_docs/Presentation_PFE_USTHB.pptx)**
+### 📊 Defense Presentation (Soutenance)
+- 📊 **[View & Download Defense Presentation Slides (PDF)](https://raw.githubusercontent.com/DjidelAbdelali/pfe/main/memoire_docs/Presentation_PFE_USTHB.pdf)**
 
 ---
 
