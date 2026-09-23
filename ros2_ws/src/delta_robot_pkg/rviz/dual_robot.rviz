@@ -1,0 +1,106 @@
+Panels:
+  - Class: rviz_common/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Status1
+        - /Ghost Robot1
+        - /Real Robot1
+      Splitter Ratio: 0.5
+  - Class: rviz_common/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 0.05
+      Class: rviz_default_plugins/Grid
+      Color: 160; 160; 160
+      Enabled: true
+      Line Style:
+        Line Width: 0.03
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 20
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Alpha: 0.4
+      Class: rviz_default_plugins/RobotModel
+      Collision Enabled: false
+      Description File: ""
+      Description Source: Topic
+      Description Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /ghost/robot_description
+      Enabled: true
+      Name: Ghost Robot (Cyan Reference IK)
+      TF Prefix: ghost
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Alpha: 1.0
+      Class: rviz_default_plugins/RobotModel
+      Collision Enabled: false
+      Description File: ""
+      Description Source: Topic
+      Description Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /real/robot_description
+      Enabled: true
+      Name: Real Robot (Orange SMC Dynamics)
+      TF Prefix: real
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+      Name: TF
+      Show Axes: true
+      Show Arrows: false
+      Show Names: true
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 15; 23; 42
+    Fixed Frame: world
+    Frame Rate: 60
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+      Hide Inactive Objects: true
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+  Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 0.65
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: -0.15
+      Name: Current View
+      Pitch: 0.45
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz)
+      Yaw: 0.78
