@@ -11,8 +11,8 @@ def generate_launch_description():
     urdf_path = os.path.join(pkg_dir, 'urdf', 'delta_robot.urdf.xacro')
     rviz_config_path = os.path.join(pkg_dir, 'rviz', 'dual_robot.rviz')
 
-    with open(urdf_path, 'r') as f:
-        robot_desc = f.read()
+    import xacro
+    robot_desc = xacro.process_file(urdf_path).toxml()
 
     # Ghost Robot State Publisher (/ghost namespace)
     ghost_rsp = Node(

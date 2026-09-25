@@ -6,8 +6,7 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /Ghost Robot1
-        - /Real Robot1
+        - /Delta Robot Mechanism (Web Conception)1
       Splitter Ratio: 0.5
   - Class: rviz_common/Views
     Expanded:
@@ -20,20 +19,30 @@ Visualization Manager:
     - Alpha: 0.5
       Cell Size: 0.05
       Class: rviz_default_plugins/Grid
-      Color: 160; 160; 160
+      Color: 0; 243; 255
       Enabled: true
       Line Style:
         Line Width: 0.03
         Value: Lines
-      Name: Grid
+      Name: Grid Floor
       Normal Cell Count: 0
       Offset:
         X: 0
         Y: 0
-        Z: 0
+        Z: -0.35
       Plane: XY
-      Plane Cell Count: 20
+      Plane Cell Count: 24
       Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: rviz_default_plugins/MarkerArray
+      Enabled: true
+      Name: Delta Robot Mechanism (Web Conception)
+      Topic:
+        Depth: 10
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /delta/markers
       Value: true
     - Alpha: 0.4
       Class: rviz_default_plugins/RobotModel
@@ -46,11 +55,11 @@ Visualization Manager:
         History Policy: Keep Last
         Reliability Policy: Reliable
         Value: /ghost/robot_description
-      Enabled: true
-      Name: Ghost Robot (Cyan Reference IK)
+      Enabled: false
+      Name: Ghost Robot (URDF Base)
       TF Prefix: ghost
       Update Interval: 0
-      Value: true
+      Value: false
       Visual Enabled: true
     - Alpha: 1.0
       Class: rviz_default_plugins/RobotModel
@@ -63,14 +72,14 @@ Visualization Manager:
         History Policy: Keep Last
         Reliability Policy: Reliable
         Value: /real/robot_description
-      Enabled: true
-      Name: Real Robot (Orange SMC Dynamics)
+      Enabled: false
+      Name: Real Robot (URDF Base)
       TF Prefix: real
       Update Interval: 0
-      Value: true
+      Value: false
       Visual Enabled: true
     - Class: rviz_default_plugins/TF
-      Enabled: true
+      Enabled: false
       Frame Timeout: 15
       Frames:
         All Enabled: true
@@ -78,10 +87,10 @@ Visualization Manager:
       Show Axes: true
       Show Arrows: false
       Show Names: true
-      Value: true
+      Value: false
   Enabled: true
   Global Options:
-    Background Color: 15; 23; 42
+    Background Color: 11; 15; 25
     Fixed Frame: world
     Frame Rate: 60
   Name: root
@@ -94,7 +103,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 0.65
+      Distance: 0.55
       Focal Point:
         X: 0
         Y: 0

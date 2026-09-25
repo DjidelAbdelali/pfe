@@ -5,10 +5,12 @@ slprj/
 *.tmp
 *.slxc
 
-# ROS 2 Build Artifacts
+# ROS 2 Build Artifacts & Python
 ros2_ws/build/
 ros2_ws/install/
 ros2_ws/log/
+__pycache__/
+*.pyc
 
 # OS / Editor Files
 desktop.ini
