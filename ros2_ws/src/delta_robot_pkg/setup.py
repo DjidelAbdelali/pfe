@@ -17,9 +17,9 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='PFE Team',
-    maintainer_email='user@pfe.org',
-    description='ROS 2 Package for Dual Delta Robot Simulation',
+    maintainer='DJIDEL Abdelali Rayan',
+    maintainer_email='djidelabdelali@gmail.com',
+    description='ROS 2 Package for Dual Delta Robot Simulation (Ghost IK vs Real SMC Dynamics)',
     license='MIT',
     tests_require=['pytest'],
     entry_points={

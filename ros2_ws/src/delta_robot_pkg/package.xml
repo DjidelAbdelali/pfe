@@ -4,7 +4,9 @@
   <name>delta_robot_pkg</name>
   <version>1.0.0</version>
   <description>ROS 2 Package for Dual Delta Robot Simulation (Ghost IK vs Real SMC Dynamics)</description>
-  <maintainer email="user@pfe.org">PFE Team</maintainer>
+  <maintainer email="djidelabdelali@gmail.com">DJIDEL Abdelali Rayan</maintainer>
+  <author email="djidelabdelali@gmail.com">DJIDEL Abdelali Rayan</author>
+  <author>ZETOUTOU Djedjiga Lyna</author>
   <license>MIT</license>
 
   <exec_depend>rclpy</exec_depend>

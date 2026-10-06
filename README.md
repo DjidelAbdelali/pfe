@@ -83,7 +83,8 @@ pfe/
 │   ├── Presentation_PFE_USTHB.pptx # Defense Slide Deck (PowerPoint)
 │   └── figures/                 # Trajectory Tracking & Error Metric Figures (PNG)
 │
-├── matlab_simulink/             # Controller Simulations & Benchmarks
+├── matlab_simulink/             # Controller Simulations & Benchmarks (See matlab_simulink/README.md)
+│   ├── README.md                # In-depth MATLAB/Simulink mathematical & benchmark guide
 │   ├── run_all_simulations.m    # Automated Benchmark Execution Script
 │   ├── simulation_results.csv   # Performance Indicators (ISE, IAE, Chattering Index)
 │   ├── simulation_results.mat   # Raw Time-Series Results
@@ -99,9 +100,18 @@ pfe/
 │   ├── Assem12-Copy - Copy.SLDASM # Full Delta Robot Kinematic Assembly
 │   └── *.SLDPRT                 # Stepper Motors, Arms, Idlers, Base & End-Effector Parts
 │
-└── ros2_ws/                     # ROS 2 Control Implementation
+└── ros2_ws/                     # ROS 2 Control Implementation (See ros2_ws/README.md)
+    ├── README.md                # Comprehensive ROS 2 Dual Robot Workspace Guide
+    ├── run_simulation.sh        # One-click ROS 2 RViz2 launcher script
     └── src/                     # ROS 2 Packages (URDF Specifications, Nodes, Launch Files)
 ```
+
+---
+
+## 📚 Technical Module Documentation
+
+- 📊 **[MATLAB / Simulink Benchmarks & Formulations](matlab_simulink/README.md)** — Mathematical formulations of $S_1$, $S_2$, DHRL, continuous saturation, automated batch execution, and optimization routines.
+- 🤖 **[ROS 2 Dual Delta Robot Workspace](ros2_ws/README.md)** — High-speed parallel manipulator simulation stack in ROS 2 Jazzy/Humble, closed-chain kinematics, dual-robot RViz2 visualizer, and live topic interfaces.
 
 ---
 
